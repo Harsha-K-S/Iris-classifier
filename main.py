@@ -11,7 +11,7 @@ def index():
 def results(cls):
     return render_template('results.html', cls=cls)
 
-@app.route('/submit', methods=['POST', 'GET'])
+@app.route('/submit', methods=['POST'])
 def submit():
     cls = ""
     with open('iris_predict_model.pkl', 'rb') as file:
