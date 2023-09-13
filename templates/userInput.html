@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iris flower classifier</title>
+</head>
+<body>
+  <h1>Welcome to Iris flower classifier</h1>
+  <h2>Predict the flower by giving the property values of the flower</h2>
+
+  <form action="/submit" method="POST">
+      <label for="sepallen">Sepal length</label>
+      <input type="text" id="sepallen" name="sepal-len" placeholder="0"/>
+
+      <label for="sepalwidth">Sepal width</label>
+      <input type="text" id="sepalwidth" name="sepal-wid" placeholder="0"/>
+
+      <label for="petallen">petal length</label>
+      <input type="text" id="petallen" name="petal-len" placeholder="0"/>
+
+      <label for="petalwid">petal width</label>
+      <input type="text" id="petalwid" name="petal-wid" placeholder="0"/>
+
+      <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
