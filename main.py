@@ -31,6 +31,6 @@ def submit():
     return redirect(url_for('results', cls=cls))
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
 
 
