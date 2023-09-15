@@ -14,7 +14,7 @@ def results(cls):
 @app.route('/submit', methods=['POST', 'GET'])
 def submit():
     cls = ""
-    with open('iris_predict_model.pkl', 'rb') as file:
+    with open('./iris_predict_model.pkl', 'rb') as file:
         clsf = pickle.load(file)
     if request.method == 'POST':
         seplen = float(request.form['sepal-len'])
