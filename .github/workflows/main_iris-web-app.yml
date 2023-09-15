@@ -8,6 +8,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'iris_predict_model.pkl'
   workflow_dispatch:
 
 jobs:
